@@ -1,0 +1,23 @@
+<h1>Listing technicalinfos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @technicalinfos.each do |technicalinfo| %>
+      <tr>
+        <td><%= link_to 'Show', technicalinfo %></td>
+        <td><%= link_to 'Edit', edit_technicalinfo_path(technicalinfo) %></td>
+        <td><%= link_to 'Destroy', technicalinfo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Technicalinfo', new_technicalinfo_path %>

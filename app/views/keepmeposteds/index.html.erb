@@ -1,0 +1,23 @@
+<h1>Listing keepmeposteds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @keepmeposteds.each do |keepmeposted| %>
+      <tr>
+        <td><%= link_to 'Show', keepmeposted %></td>
+        <td><%= link_to 'Edit', edit_keepmeposted_path(keepmeposted) %></td>
+        <td><%= link_to 'Destroy', keepmeposted, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Keepmeposted', new_keepmeposted_path %>

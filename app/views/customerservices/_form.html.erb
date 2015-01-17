@@ -1,0 +1,17 @@
+<%= form_for(@customerservice) do |f| %>
+  <% if @customerservice.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@customerservice.errors.count, "error") %> prohibited this customerservice from being saved:</h2>
+
+      <ul>
+      <% @customerservice.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
