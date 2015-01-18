@@ -1,20 +1,92 @@
 Rails.application.routes.draw do
+
+
+  # Route for start action
+   #match '/forum_posts/postareviewncomment', :controller => 'forum_posts', :action => 'postareviewncomment', via: :get
+
+    get '/forum_posts/postareviewncomment';
+    get '/forum_posts/apage';
+
+
+    get 'corporates/aboutus'
+    get 'corporates/careers'
+    get 'corporates/cookies'
+    get 'corporates/copyright'
+    get 'corporates/policy'
+    get 'corporates/pressreleases'
+    get 'corporates/privacy'
+    get 'corporates/termsnconditions'
+
+
+      get 'customerservices/contactus'
+      get 'customerservices/faqs'
+      get 'customerservices/help'
+      get 'customerservices/sendfeedback'
+
+    get 'technicalinfos/mobileapps'
+    get 'technicalinfos/tools'
+    get 'technicalinfos/downloads'
+
+      get 'keepmeposteds/subscribe'
+      get 'keepmeposteds/viewnotifications'
+
+  get 'my_accounts/loginpage'
+  get 'my_accounts/logout'
+  get 'my_accounts/viewhistory'
+  get 'my_accounts/viewprofile'
+  get 'my_accounts/editprofile'
+  get 'my_accounts/settingsprofile'
+  get 'my_accounts/editcredentials'
+  get 'my_accounts/createanaccount'
+
+
+  get 'shoppings/viewcart'
+  get 'shoppings/editcart'
+  get 'shoppings/addtoshoppingcart'
+  get 'shoppings/proceedtocheckoutnconfirm'
+
+
+  get 'searchn_view_items/searchanitem'
+  get 'searchn_view_items/viewanitem'
+  get 'searchn_view_items/viewrecommendeditems'
+
+
   resources :corporates
+
+  
 
   resources :customerservices
 
+ 
+
   resources :technicalinfos
+
+ 
 
   resources :keepmeposteds
 
+
+
   resources :my_accounts
+
+
 
   resources :shoppings
 
+
+
+
   resources :searchn_view_items
 
-  resources :forum_posts
 
+
+
+  resources :forum_posts
+ 
+
+  
+
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

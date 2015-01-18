@@ -11,7 +11,7 @@ body {
 	background:#fff;
 	min-width:600px;		/* Minimum width of layout - remove line if not required */
 					/* The min-width property does not work in old versions of Internet Explorer */
-	font-size:90%;
+	font-size:80%;
 }
 a {
 	color:#369;
@@ -86,9 +86,8 @@ a {
 
 
 .labels{
-  
-    
-  padding: 0.2em;
+ 
+  padding: 0.1em;
   line-height: 1.4;
   background-color: #94B8E9;
   border: 1px solid black;

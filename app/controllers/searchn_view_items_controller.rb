@@ -3,6 +3,15 @@ class SearchnViewItemsController < ApplicationController
 
   # GET /searchn_view_items
   # GET /searchn_view_items.json
+
+  def searchanitem
+  end
+  def viewanitem
+  end
+  def viewrecommendeditems
+  end
+
+
   def index
     @searchn_view_items = SearchnViewItem.all
   end

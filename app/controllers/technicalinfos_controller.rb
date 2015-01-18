@@ -3,6 +3,16 @@ class TechnicalinfosController < ApplicationController
 
   # GET /technicalinfos
   # GET /technicalinfos.json
+
+
+   def mobileapps
+   end
+   def tools
+   end
+   def downloads
+   end
+
+
   def index
     @technicalinfos = Technicalinfo.all
   end

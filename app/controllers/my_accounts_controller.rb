@@ -3,6 +3,26 @@ class MyAccountsController < ApplicationController
 
   # GET /my_accounts
   # GET /my_accounts.json
+
+  def loginpage
+  end
+  def logout
+  end
+  def viewhistory
+  end
+  def viewprofile
+  end
+  def editprofile
+  end
+  def settingsprofile
+  end
+  def editcredentials
+  end
+  def createanaccount
+  end
+
+
+
   def index
     @my_accounts = MyAccount.all
   end

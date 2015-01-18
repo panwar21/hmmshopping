@@ -3,6 +3,29 @@ class CustomerservicesController < ApplicationController
 
   # GET /customerservices
   # GET /customerservices.json
+
+
+
+
+
+  def contactus
+  end
+  def faqs
+  end
+  def help
+  end
+  def sendfeedback
+  end
+
+
+
+
+
+
+
+
+
+
   def index
     @customerservices = Customerservice.all
   end

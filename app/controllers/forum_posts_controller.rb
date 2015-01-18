@@ -1,8 +1,13 @@
 class ForumPostsController < ApplicationController
-  before_action :set_forum_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_forum_post, only: [:show, :edit, :update, :destroy,]
 
   # GET /forum_posts
   # GET /forum_posts.json
+  
+ 
+  def apage
+  end
+
   def index
     @forum_posts = ForumPost.all
   end
@@ -10,6 +15,10 @@ class ForumPostsController < ApplicationController
   # GET /forum_posts/1
   # GET /forum_posts/1.json
   def show
+  end
+
+
+  def postareviewncomment
   end
 
   # GET /forum_posts/new

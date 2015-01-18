@@ -3,6 +3,18 @@ class ShoppingsController < ApplicationController
 
   # GET /shoppings
   # GET /shoppings.json
+
+  def viewcart
+  end
+  def editcart
+  end
+  def addtoshoppingcart
+  end
+  def proceedtocheckoutnconfirm
+  end
+
+
+
   def index
     @shoppings = Shopping.all
   end

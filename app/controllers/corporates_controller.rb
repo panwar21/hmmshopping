@@ -3,6 +3,33 @@ class CorporatesController < ApplicationController
 
   # GET /corporates
   # GET /corporates.json
+
+
+
+
+
+
+  def aboutus
+  end
+  def careers
+  end
+  def cookies
+  end
+  def copyright
+  end
+  def policy
+  end
+  def pressreleases
+  end
+  def privacy
+  end
+  def termsnconditions
+  end
+
+
+
+
+
   def index
     @corporates = Corporate.all
   end

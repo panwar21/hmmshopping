@@ -3,6 +3,20 @@ class KeepmepostedsController < ApplicationController
 
   # GET /keepmeposteds
   # GET /keepmeposteds.json
+
+
+
+    def subscribe
+    end
+    def viewnotifications
+    end
+
+
+
+
+
+
+
   def index
     @keepmeposteds = Keepmeposted.all
   end
