@@ -82,9 +82,25 @@
 
 
           <table style="width:100%">
+
+
+            <tr>
+
+              <td>
+
+             <td><%= link_to "Start new Sesion", {controller: "welcome", action: "sessionstart"}, class: "labels_session" %></td>
+
+
+              </td>
+
+            </tr>
+
+
+
             <tr>
               
-              <td> Corporate</td>
+              <td><%= link_to "CorparateUseCase", {controller: "corporates", action: "index"}, class: "labels_usecase" %></td>
+
 
 
               <td><%= link_to "About US", {controller: "corporates", action: "aboutus"}, class: "labels" %></td>
@@ -102,9 +118,13 @@
               <td><%= link_to "Terms and Conditions", {controller: "corporates", action: "termsnconditions"}, class: "labels" %></td>
            
             </tr>
+
+
+
             <tr>
                  
-              <td> Forum Posts </td>
+            <td><%= link_to "Forum Posts UseCase", {controller: "forum_posts", action: "index"}, class: "labels_usecase" %></td>
+
 
 
               <td><%= link_to "Post a Review or Comment", {controller: "forum_posts", action: "postareviewncomment"}, class: "labels" %></td>
@@ -112,7 +132,7 @@
 
             <tr>
 
-              <td> Customer Services </td>
+            <td><%= link_to "Customer Services UseCase", {controller: "customerservices", action: "index"}, class: "labels_usecase" %></td>
 
 
               <td><%= link_to "Contact Us", {controller: "customerservices", action: "contactus"}, class: "labels" %></td>
@@ -128,7 +148,7 @@
             <tr>
                     
 
-              <td>  Technical Info </td>
+            <td><%= link_to "Technical Info UseCase", {controller: "technicalinfos", action: "index"}, class: "labels_usecase" %></td>
 
 
               <td><%= link_to "Mobile Apps", {controller: "technicalinfos", action: "mobileapps"}, class: "labels" %></td>
@@ -141,7 +161,7 @@
 
             <tr>
                       
-              <td> Keep me posted </td>
+            <td><%= link_to "Keep me posted UseCase", {controller: "keepmeposteds", action: "index"}, class: "labels_usecase" %></td>
 
 
               <td><%= link_to "Subscribe", {controller: "keepmeposteds", action: "subscribe"}, class: "labels" %></td>
@@ -153,7 +173,7 @@
             <tr>
                   
 
-              <td> My Account </td>
+            <td><%= link_to "EditnViewProfileUseCase", {controller: "my_accounts", action: "editnviewprofile"}, class: "labels_usecase" %></td>
 
 
               <td><%= link_to "Login Page", {controller: "my_accounts", action: "loginpage"}, class: "labels" %></td>
@@ -173,16 +193,20 @@
 
             </tr>
 
+            <tr>
+             
+            <td><%= link_to "MakeaPurchaseUseCase", {controller: "shoppings", action: "makeapurchase"}, class: "labels_usecase" %></td>
+          </tr>
 
             <tr>
              
-              <td> Shopping </td>
+            <td><%= link_to "AddtoShoppingCart UseCase", {controller: "shoppings", action: "usecaseaddtoshoppingcart"}, class: "labels_usecase" %></td>
 
 
               <td><%= link_to "View Cart", {controller: "shoppings", action: "viewcart"}, class: "labels" %></td>
                             <td><%= link_to "Edit Cart", {controller: "shoppings", action: "editcart"}, class: "labels" %></td>
 
-              <td><%= link_to "Add to shopping cart", {controller: "shoppings", action: "addtoshoppingcart"}, class: "labels" %></td>
+              <td><%= link_to "Add to shopping cart", {controller: "shoppings", action: "addinshoppingcart"}, class: "labels" %></td>
 
               <td><%= link_to "Proceed to checkoutnconfirm", {controller: "shoppings", action: "proceedtocheckoutnconfirm"}, class: "labels" %></td>
 
@@ -192,7 +216,7 @@
 
             <tr>
              
-              <td> Search_n_view_items </td>
+            <td><%= link_to "SearchnViewItem UseCase", {controller: "searchn_view_items", action: "index"}, class: "labels_usecase" %></td>
 
 
               <td><%= link_to "Search an Item", {controller: "searchn_view_items", action: "searchanitem"}, class: "labels" %></td>
@@ -201,6 +225,18 @@
               <td><%= link_to "View recommended items", {controller: "searchn_view_items", action: "viewrecommendeditems"}, class: "labels" %></td>
 
               
+
+            </tr>
+
+
+            <tr>
+
+              <td>
+
+             <td><%= link_to "End this session", {controller: "welcome", action: "sessionend"}, class: "labels_session" %></td>
+
+
+              </td>
 
             </tr>
 

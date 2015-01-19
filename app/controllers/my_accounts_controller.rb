@@ -21,6 +21,8 @@ class MyAccountsController < ApplicationController
   def createanaccount
   end
 
+  def editnviewprofile
+  end
 
 
   def index

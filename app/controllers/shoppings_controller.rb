@@ -8,9 +8,15 @@ class ShoppingsController < ApplicationController
   end
   def editcart
   end
-  def addtoshoppingcart
+  def addinshoppingcart
   end
   def proceedtocheckoutnconfirm
+  end
+
+  def makeapurchase
+  end
+
+  def usecaseaddtoshoppingcart
   end
 
 

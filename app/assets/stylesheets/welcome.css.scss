@@ -36,7 +36,7 @@ a {
 	
 
 	position:relative;
-	height:500px;
+	height:600px;
 	width:100%;
 }
 
@@ -90,6 +90,30 @@ a {
   padding: 0.1em;
   line-height: 1.4;
   background-color: #94B8E9;
+  border: 1px solid black;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+
+.labels_session{
+ 
+  padding: 0.1em;
+  line-height: 1.4;
+  background-color: red;
+  border: 1px solid black;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+
+.labels_usecase{
+ 
+  padding: 0.1em;
+  line-height: 1.4;
+  background-color: yellow;
   border: 1px solid black;
   color: #000;
   text-decoration: none;

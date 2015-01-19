@@ -4,6 +4,11 @@ Rails.application.routes.draw do
   # Route for start action
    #match '/forum_posts/postareviewncomment', :controller => 'forum_posts', :action => 'postareviewncomment', via: :get
 
+
+
+    get 'welcome/sessionstart'
+    get 'welcome/sessionend'
+
     get '/forum_posts/postareviewncomment';
     get '/forum_posts/apage';
 
@@ -38,12 +43,15 @@ Rails.application.routes.draw do
   get 'my_accounts/settingsprofile'
   get 'my_accounts/editcredentials'
   get 'my_accounts/createanaccount'
+  get 'my_accounts/editnviewprofile'
 
 
   get 'shoppings/viewcart'
   get 'shoppings/editcart'
-  get 'shoppings/addtoshoppingcart'
+  get 'shoppings/addinshoppingcart'
   get 'shoppings/proceedtocheckoutnconfirm'
+  get 'shoppings/makeapurchase'
+  get 'shoppings/usecaseaddtoshoppingcart'
 
 
   get 'searchn_view_items/searchanitem'
