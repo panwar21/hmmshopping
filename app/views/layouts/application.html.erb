@@ -44,7 +44,47 @@
       <div class="col_left">
         <!-- Column 1 start -->
         <h2>Left Menu</h2>
-        
+
+        <hr>
+
+              <div >
+
+              
+                    <%= link_to "Start new Sesion", {controller: "welcome", action: "sessionstart"}, class: "labels_session" %>
+
+
+             
+
+             </div>
+             <hr>
+
+
+            <table style="width:100%">
+
+
+                  
+              
+         <tr class="spaceUnder"><td><%= link_to "CorparateUseCase", {controller: "corporates", action: "index"}, class: "labels_usecase" %></td></tr>
+
+        <tr class="spaceUnder"><td><%= link_to "Forum Posts UseCase", {controller: "forum_posts", action: "index"}, class: "labels_usecase" %></td></tr>
+        <tr class="spaceUnder"> <td><%= link_to "Customer Services UseCase", {controller: "customerservices", action: "index"}, class: "labels_usecase" %></td></tr>
+
+            <tr class="spaceUnder"><td><%= link_to "Technical Info UseCase", {controller: "technicalinfos", action: "index"}, class: "labels_usecase" %></td></tr>
+
+            <tr class="spaceUnder"><td><%= link_to "Keep me posted UseCase", {controller: "keepmeposteds", action: "index"}, class: "labels_usecase" %></td></tr>
+
+            <tr class="spaceUnder"><td><%= link_to "EditnViewProfileUseCase", {controller: "my_accounts", action: "editnviewprofile"}, class: "labels_usecase" %></td></tr>
+
+
+            <tr class="spaceUnder"><td><%= link_to "MakeaPurchaseUseCase", {controller: "shoppings", action: "makeapurchase"}, class: "labels_usecase" %></td></tr>
+
+            <tr class="spaceUnder"><td><%= link_to "AddtoShoppingCart UseCase", {controller: "shoppings", action: "usecaseaddtoshoppingcart"}, class: "labels_usecase" %></td></tr>
+
+            <tr class="spaceUnder"><td><%= link_to "SearchnViewItem UseCase", {controller: "searchn_view_items", action: "index"}, class: "labels_usecase" %></td></tr>
+
+
+          </table>
+
         <!-- Column 1 end -->
       </div>
 
@@ -67,7 +107,7 @@
         
         <div id = "mainbox1">
 
-          <h2> details of the label here!</h2>
+          <h5> details of the label here!</h5>
           <%= yield %>
 
 
@@ -77,29 +117,20 @@
 
         <div id = "mainbox2">
 
-          <h2> list of labels as clickable buttons buttons grouped under use cases roughly</h2>
+          <h6> list of labels as clickable buttons buttons grouped under use cases roughly</h6>
 
-
-
+              
+          <hr>
           <table style="width:100%">
 
 
-            <tr>
-
-              <td>
-
-             <td><%= link_to "Start new Sesion", {controller: "welcome", action: "sessionstart"}, class: "labels_session" %></td>
-
-
-              </td>
-
-            </tr>
+            
 
 
 
             <tr>
               
-              <td><%= link_to "CorparateUseCase", {controller: "corporates", action: "index"}, class: "labels_usecase" %></td>
+              <td>CorparateUseCase</td>
 
 
 
@@ -123,7 +154,7 @@
 
             <tr>
                  
-            <td><%= link_to "Forum Posts UseCase", {controller: "forum_posts", action: "index"}, class: "labels_usecase" %></td>
+            <td>Forum Posts UseCase</td>
 
 
 
@@ -132,7 +163,7 @@
 
             <tr>
 
-            <td><%= link_to "Customer Services UseCase", {controller: "customerservices", action: "index"}, class: "labels_usecase" %></td>
+            <td>Customer Services UseCase</td>
 
 
               <td><%= link_to "Contact Us", {controller: "customerservices", action: "contactus"}, class: "labels" %></td>
@@ -148,7 +179,7 @@
             <tr>
                     
 
-            <td><%= link_to "Technical Info UseCase", {controller: "technicalinfos", action: "index"}, class: "labels_usecase" %></td>
+            <td>Technical Info UseCase</td>
 
 
               <td><%= link_to "Mobile Apps", {controller: "technicalinfos", action: "mobileapps"}, class: "labels" %></td>
@@ -161,7 +192,7 @@
 
             <tr>
                       
-            <td><%= link_to "Keep me posted UseCase", {controller: "keepmeposteds", action: "index"}, class: "labels_usecase" %></td>
+            <td>Keep me posted UseCase</td>
 
 
               <td><%= link_to "Subscribe", {controller: "keepmeposteds", action: "subscribe"}, class: "labels" %></td>
@@ -173,7 +204,7 @@
             <tr>
                   
 
-            <td><%= link_to "EditnViewProfileUseCase", {controller: "my_accounts", action: "editnviewprofile"}, class: "labels_usecase" %></td>
+            <td>EditnViewProfileUseCase</td>
 
 
               <td><%= link_to "Login Page", {controller: "my_accounts", action: "loginpage"}, class: "labels" %></td>
@@ -195,12 +226,12 @@
 
             <tr>
              
-            <td><%= link_to "MakeaPurchaseUseCase", {controller: "shoppings", action: "makeapurchase"}, class: "labels_usecase" %></td>
+            <td>MakeaPurchaseUseCase</td>
           </tr>
 
             <tr>
              
-            <td><%= link_to "AddtoShoppingCart UseCase", {controller: "shoppings", action: "usecaseaddtoshoppingcart"}, class: "labels_usecase" %></td>
+            <td>AddtoShoppingCart UseCase</td>
 
 
               <td><%= link_to "View Cart", {controller: "shoppings", action: "viewcart"}, class: "labels" %></td>
@@ -216,7 +247,7 @@
 
             <tr>
              
-            <td><%= link_to "SearchnViewItem UseCase", {controller: "searchn_view_items", action: "index"}, class: "labels_usecase" %></td>
+            <td>SearchnViewItem UseCase</td>
 
 
               <td><%= link_to "Search an Item", {controller: "searchn_view_items", action: "searchanitem"}, class: "labels" %></td>
@@ -229,16 +260,7 @@
             </tr>
 
 
-            <tr>
-
-              <td>
-
-             <td><%= link_to "End this session", {controller: "welcome", action: "sessionend"}, class: "labels_session" %></td>
-
-
-              </td>
-
-            </tr>
+           
 
 
 
@@ -246,8 +268,7 @@
 
 
           </table>
-
-
+          <hr>
         </div>
 
 
@@ -269,7 +290,17 @@
 
       <div class="col_right">
         <!-- Column 3 start -->
-        Right Column Stuff
+       
+
+               <div style = "position: absolute;top : 500px">
+<hr>
+              
+
+                      <%= link_to "End this session", {controller: "welcome", action: "sessionend"}, class: "labels_session" %>
+<hr>
+
+                </div>
+                
         
       </div>
   

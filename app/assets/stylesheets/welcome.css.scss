@@ -120,6 +120,11 @@ a {
   text-align: center;
 }
 
+/* Apply padding to td elements that are direct children of the tr element. */
+tr.spaceUnder > td
+{
+  padding-bottom: 1em;
+}
 
 
 /* Footer styles */
